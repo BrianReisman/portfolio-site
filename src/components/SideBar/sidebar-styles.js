@@ -3,7 +3,10 @@ import styled from "styled-components";
 const SidebarStyles = styled.div`
 flex: 1 1 .40;
 width: 40%;
-
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,8 +63,8 @@ width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
-    /* width: 100%; */
+    height: 96vh;
+    width: 100%;
   } 
   .container{
     display: flex;
@@ -75,6 +78,7 @@ width: 40%;
     }
     s {
       font-size: 1.4rem;
+      text-decoration-color: tomato;
     }
     h1 {
       width: 100%;
@@ -96,14 +100,80 @@ width: 40%;
       font-size: 1.1rem;
     }
     a {
-      /* text-decoration: none; */
       color: tomato;
     }
     nav {
       padding: 50px 0 0 0;
       width: 100%;
     }
-    nav button {
+
+
+    .btn{
+      border-radius: 20px 0 20px 0;
+      margin-right: 5%;
+      padding: 8px 25px 8px 25px;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      position: relative;
+      font-size: 1.4rem;
+      background-color: transparent; /* //!Button default is ugly gray */
+      mix-blend-mode: difference;
+      color: blue;
+
+      &::before{
+        transition: all 0.75s cubic-bezier(0.68, -.55, 0.265, 1.55);
+        content: '';
+        width: 45px; /*<!> this is hard coded... a better way?*/
+        height: 100%;
+        background-color: orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50px; /* 50px; px makes the corners max round without making oval */
+        mix-blend-mode: difference;
+        & .btn-text{
+          color: blue;
+          mix-blend-mode: difference;
+        }
+      }
+        &:hover{
+          color: blue;
+          &::before{
+            width:100%; /*this is the dimension of the background after hover transition */
+            background-color: red;
+          }
+        }
+    }
+  }
+
+    footer{
+      height: 3vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    footer code{
+      font-size: 1rem;
+      font-family: monospace;
+    }
+`;
+
+export default SidebarStyles;
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FROM BEFORE TINKERING WITH BUTTON CSS */
+    /* nav button {
       color: tomato;
       font-size: 1.6rem;
       border-radius: 20px 0 20px 0;
@@ -117,24 +187,5 @@ width: 40%;
       color: white;
       background-color: tomato;
       text-decoration: none;
-    }
-  }
-  *{
-    /* border: 1px dotted tomato; */
-    }
-
-
-
-    footer{
-      height: 4vh;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-    }
-    footer code{
-      font-size: 1rem;
-      font-family: monospace;
-    }
-`;
-
-export default SidebarStyles;
+    } */
+    /* FROM BEFORE TINKERING WITH BUTTON CSS */

@@ -18,9 +18,9 @@ function Sidebar() {
           <p>and I <s>break</s> make things for the web<span id="point">!</span></p>
           <p id="aside">...there's a hidden link near by...</p>
           <nav>
-            <button onClick={()=>{push('/projects')}}><code>Projects</code></button>
-            <button onClick={()=>{push('/now')}}><code>Now</code></button>
-            <button onClick={()=>{push('/contact')}}><code>Contact</code></button>
+            <button className="btn" onClick={()=>{push('/projects')}}><code className='btn-text'>Projects</code></button>
+            <button className="btn" onClick={()=>{push('/now')}}><code className='btn-text'>Now</code></button>
+            <button className="btn" onClick={()=>{push('/contact')}}><code className='btn-text'>Contact</code></button>
           </nav>
         </div>
       </header>

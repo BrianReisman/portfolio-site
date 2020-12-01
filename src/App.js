@@ -12,18 +12,31 @@ import styled from "styled-components";
 import { Route } from "react-router-dom";
 
 const AppStyles = styled.div`
+    box-sizing: border-box;
+
   display: flex;
-  /* justify-content: center; */
+  * {
+    box-sizing: border-box;
+    /* border: 1px dotted tomato; */
+  }
+  .right-pane{
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1 1 .6;
+    height: 99vh; /*//!It seems 100vh brings on scroll bar */
+  }
 `;
 
 function App() {
   return (
     <AppStyles>
       <Sidebar />
-      <Route exact path="/" component={Home} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/now" component={Now} />
-      <Route path="/contact" component={Contact} />
+      <div className='right-pane'>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/now" component={Now} />
+        <Route path="/contact" component={Contact} />
+      </div>
     </AppStyles>
   );
 }

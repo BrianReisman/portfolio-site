@@ -1,15 +1,16 @@
 import styled from "styled-components";
-import pix from './BrianReismanlgcropped.jpg'
+import pix from './cutpix.png'
 
 const HomeStyles = styled.div`
 flex: 1 1 .6;
+box-sizing: border-box;
 
 width: 100%;
 
 .container{
 background-image: url(${pix});
-/* width: 100%; */
-height: 100%;
+width: 100%;
+height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -61,7 +62,7 @@ background-size: cover;
   }
 
 *{
-  border: 1px dotted tomato;
+  /* border: 1px dotted tomato; */
 }
   
 `;

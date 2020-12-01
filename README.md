@@ -4,7 +4,10 @@ Footer? Position: fixed. Or added to bottom of header?
 
 
 
-
+# Captain's Log
+11.30.2020
+[] Found the cause of the side scroll bar and got rid of it
+[] successfully passed props down to my Project-Card component and populated with dummy data
 
 
 
