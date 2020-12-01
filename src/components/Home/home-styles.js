@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pix from './cutpix.png'
+import pix from './BrianReismanlgcropped.jpg'
 
 const HomeStyles = styled.div`
 flex: 1 1 .6;
