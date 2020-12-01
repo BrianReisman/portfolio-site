@@ -117,31 +117,30 @@ justify-content: space-between;
       border-radius: 50px;
       position: relative;
       font-size: 1.4rem;
-      background-color: transparent; /* //!Button default is ugly gray */
+      background-color: white; //!Button default is ugly gray
       mix-blend-mode: difference;
-      color: blue;
-
+      color: black;
+      /* transition: all 0.75s cubic-bezier(0.68, -.55, 0.265, 1.55); */
+      &:hover{
+        /* color:white; */
+      }
       &::before{
         transition: all 0.75s cubic-bezier(0.68, -.55, 0.265, 1.55);
         content: '';
-        width: 45px; /*<!> this is hard coded... a better way?*/
+        width: 40px; /*<!> this is hard coded... a better way?*/
         height: 100%;
-        background-color: orange;
+        background-color: tomato;
         position: absolute;
         top: 0;
-        left: 0;
+        left: -18px;
         border-radius: 50px; /* 50px; px makes the corners max round without making oval */
-        mix-blend-mode: difference;
-        & .btn-text{
-          color: blue;
-          mix-blend-mode: difference;
-        }
+        /* mix-blend-mode: difference; */
       }
         &:hover{
-          color: blue;
           &::before{
+            left: 0px;
             width:100%; /*this is the dimension of the background after hover transition */
-            background-color: red;
+            background-color: tomato;
           }
         }
     }
