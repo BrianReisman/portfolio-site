@@ -9,6 +9,9 @@ Footer? Position: fixed. Or added to bottom of header?
 [] Found the cause of the side scroll bar and got rid of it
 [] successfully passed props down to my Project-Card component and populated with dummy data
 
+12.2.2020
+[x] remove <code> tags from sidebar and apply styling to buttons
+[] get selected button to keep hover style
 
 
 

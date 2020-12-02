@@ -7,6 +7,9 @@ box-sizing: border-box;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+*{
+border: 1px solid red;
+}
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -103,49 +106,65 @@ justify-content: space-between;
       color: tomato;
     }
     nav {
-      padding: 50px 0 0 0;
-      width: 100%;
-    }
-
-    .active{
-      font-size: 5rem;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 50px 0 0 0;
+      /* width: 100%; */
+      border: 1px solid blue;
     }
 
     .btn{
-      border-radius: 20px 0 20px 0;
-      margin-right: 5%;
+      font-family: monospace;
+      border: 1px botted red;
       padding: 8px 25px 8px 25px;
-      outline: none;
-      border: none;
-      border-radius: 50px;
+      outline: none; /*keeps after click outline away*/
+      border-radius: 20px 0 20px 0;
       position: relative;
       font-size: 1.4rem;
-      background-color: white; //!Button default is ugly gray
+      background-color: transparent; /*!Button default is ugly gray*/
       mix-blend-mode: difference;
-      color: black;
-      /* transition: all 0.75s cubic-bezier(0.68, -.55, 0.265, 1.55); */
+      color: tomato;
+      transition: all 0.5s cubic-bezier(0.68, -.55, 0.265, 1.55);
       &:hover{
-        /* color:white; */
-      }
-      &::before{
-        transition: all 0.75s cubic-bezier(0.68, -.55, 0.265, 1.55);
-        content: '';
-        width: 40px; /*<!> this is hard coded... a better way?*/
-        height: 100%;
+        color:white;
         background-color: tomato;
-        position: absolute;
-        top: 0;
-        left: -18px;
-        border-radius: 50px; /* 50px; px makes the corners max round without making oval */
-        /* mix-blend-mode: difference; */
       }
-        &:hover{
-          &::before{
-            left: 0px;
-            width:100%; /*this is the dimension of the background after hover transition */
-            background-color: tomato;
-          }
-        }
+
+    .btnActive{
+      border: 1px botted red;
+      margin-right: 5%;
+      padding: 8px 25px 8px 25px;
+      outline: none; /*keeps after click outline away*/
+      border-radius: 20px 0 20px 0;
+      position: relative;
+      font-size: 4rem;
+      background-color: transparent; /*!Button default is ugly gray*/
+      mix-blend-mode: difference;
+      color: tomato;
+      transition: all 0.5s cubic-bezier(0.68, -.55, 0.265, 1.55);
+
+
+      /* &::before{ */
+        /* transition: all 0.75s cubic-bezier(0.68, -.55, 0.265, 1.55); */
+        /* content: ''; */
+        /* color: red; */
+        /* width: 40px; <!> this is hard coded... a better way? */
+        /* height: 100%; */
+        /* background-color: tomato; */
+        /* position: absolute; */
+        /* top: 0; */
+        /* left: -18px; */
+        /* border-radius: 50px; 50px; px makes the corners max round without making oval */
+        /* mix-blend-mode: difference; */
+      /* } */
+        /* &:hover{ */
+          /* &::before{ */
+            /* left: 0px; */
+            /* width:100%; this is the dimension of the background after hover transition */
+            /* background-color: tomato; */
+          /* } */
+        /* } */
+
     }
   }
 
@@ -162,32 +181,3 @@ justify-content: space-between;
 `;
 
 export default SidebarStyles;
-
-
-
-
-
-
-
-
-
-
-
-
-    /* FROM BEFORE TINKERING WITH BUTTON CSS */
-    /* nav button {
-      color: tomato;
-      font-size: 1.6rem;
-      border-radius: 20px 0 20px 0;
-      padding: 8px 25px 8px 25px;
-      margin-right: 5%;
-      background-color: transparent;
-      border: none;
-      outline: none;
-    }
-    nav button:hover {
-      color: white;
-      background-color: tomato;
-      text-decoration: none;
-    } */
-    /* FROM BEFORE TINKERING WITH BUTTON CSS */

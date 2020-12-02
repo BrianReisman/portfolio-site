@@ -32,10 +32,12 @@ function App() {
     <AppStyles>
       <Sidebar />
       <div className='right-pane'>
+
         <Route exact path="/" component={Home} />
         <Route path="/projects" component={Projects} />
         <Route path="/now" component={Now} />
         <Route path="/contact" component={Contact} />
+        
       </div>
     </AppStyles>
   );
