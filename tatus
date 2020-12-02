@@ -1,0 +1,53 @@
+[33mcommit 532b15e0239920835b03cd6227cad980eb8baf95[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Tue Dec 1 18:12:28 2020 -0500
+
+    integrating React Router for NavLink prop. This commit is before beginning
+
+[33mcommit bf15f4f62e021233f3c3ea2bf4b40c25886ddd7c[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Tue Dec 1 16:30:06 2020 -0500
+
+    Added inputs and labels to contact component form
+
+[33mcommit 3137a1e7f5acdc5611c2a9805363598f59b3bd8c[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Tue Dec 1 16:29:10 2020 -0500
+
+    adjusted nav button CSS animation
+
+[33mcommit c908215111e2cba3e13bf447563890a0e4c9b27c[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Tue Dec 1 16:28:31 2020 -0500
+
+    Added onClick attribute to JSX to return to home component
+
+[33mcommit 8eddf55394d9c415e0f4d2a850ba12e2e4ee9a09[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Mon Nov 30 22:06:59 2020 -0500
+
+    got rid of the need for a scroll bar and successfully passed data to project-card component
+
+[33mcommit d3f0f553f2079a270241bd1bb8b45dbd820dd0bf[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Wed Nov 25 21:16:25 2020 -0500
+
+    initial commit mostly from new react app. Installed styled-components and react-router-dom
+
+[33mcommit 6276d774caa6c17b5508c2d69fb06741415ecff2[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Wed Nov 25 21:15:39 2020 -0500
+
+    initial commit
+
+[33mcommit 5922e095057b841d73d7bda79db141c97c652fb5[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Wed Nov 25 21:14:57 2020 -0500
+
+    initial commit with first 5 components build out; home, now, contact, projects, and sidebar
+
+[33mcommit 096ae9f50a4e173cf14df3f73271f3f5769fb1ca[m
+Author: Brian Reisman <brianreisman@protonmail.com>
+Date:   Wed Nov 25 21:13:55 2020 -0500
+
+    gitignore

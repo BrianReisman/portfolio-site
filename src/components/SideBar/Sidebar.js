@@ -1,15 +1,22 @@
-import { useHistory, NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import SidebarStyles from './sidebar-styles';
 
 function Sidebar() {
   const {push} = useHistory();
 
   function onClickFunction(e){
+    const nav = document.querySelector('nav').childNodes;
+    nav.forEach(child =>{
+      console.log(child)
+      child.classList.remove('active');
+    if(e.target.id === child.id){
+      child.classList.add('active')
+      console.log(child.classList, child.className)
+    }
+    })
     push(`/${e.target.id}`)
-    console.log(e.target
-      )
-
   }
+
 
   return (
     <SidebarStyles>
@@ -24,15 +31,11 @@ function Sidebar() {
           <p>and I <s>break</s> make things for the web<span id="point">!</span></p>
           <p id="aside">...there's a hidden link near by...</p>
           <nav>
-          <NavLink to='/projects' activeClassName='active'>
-            <button className="btn" id="projects" onClick={onClickFunction}><code className='btn-text'>Projects</code></button>
-            </NavLink>
-          <NavLink to='/now' activeClassName='active'>
+            <button className="btn" id="projects" onClick={onClickFunction}>
+              <code className='btn-text'>Projects</code>
+            </button>
             <button className="btn" id="now" onClick={onClickFunction}><code className='btn-text'>Now</code></button>
-            </NavLink>
-          <NavLink to='/contact' activeClassName='active'>
             <button className="btn" id="contact" onClick={onClickFunction}><code className='btn-text'>Contact</code></button>
-            </NavLink>
           </nav>
         </div>
       </header>

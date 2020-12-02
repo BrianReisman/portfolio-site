@@ -17,7 +17,7 @@ function Contact() {
       <br />
       <h1>This is code from the contact page</h1>
       <br />
-      <a href="./BrianReisman-Resume.pdf" target="_blank">
+      <a href="./BrianReisman-Resume.pdf" target="_blank" download>
         resume
       </a>
 
