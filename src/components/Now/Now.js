@@ -49,3 +49,16 @@ function Now() {
 }
 
 export default Now;
+
+
+// 6 word answers
+// When did you start coding? Kicked tires in 2019, got serious 2020 // 2019-kicked tires. 2020-got serious
+// Project I'm most proud of. This job board, check it <a>here</a>
+//  What are you reading now? JavaScript: The Definitive Guide + <a>The Practice</a>
+//  
+//  
+//  
+//  
+//  
+//  
+//  

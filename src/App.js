@@ -9,20 +9,20 @@ import Now from "./components/Now/Now";
 import Contact from "./components/Contact/Contact";
 
 import styled from "styled-components";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 const AppStyles = styled.div`
-    box-sizing: border-box;
+  box-sizing: border-box;
 
   display: flex;
   * {
     box-sizing: border-box;
     /* border: 1px dotted tomato; */
   }
-  .right-pane{
+  .right-pane {
     box-sizing: border-box;
     width: 100%;
-    flex: 1 1 .6;
+    flex: 1 1 0.6;
     height: 99vh; /*//!It seems 100vh brings on scroll bar */
   }
 `;
@@ -31,13 +31,13 @@ function App() {
   return (
     <AppStyles>
       <Sidebar />
-      <div className='right-pane'>
-
-        <Route exact path="/" component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/now" component={Now} />
-        <Route path="/contact" component={Contact} />
-        
+      <div className="right-pane">
+        <Switch>
+          <Route path="/projects" component={Projects} />
+          <Route path="/now" component={Now} />
+          <Route path="/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+        </Switch>
       </div>
     </AppStyles>
   );

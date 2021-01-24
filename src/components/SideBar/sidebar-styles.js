@@ -8,7 +8,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 *{
-border: 1px solid red;
+/* border: 1px solid red; */
 }
 
   html, body, div, span, applet, object, iframe,
@@ -178,6 +178,8 @@ border: 1px solid red;
       font-size: 1rem;
       font-family: monospace;
     }
+
+  
 `;
 
 export default SidebarStyles;
