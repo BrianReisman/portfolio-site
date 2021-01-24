@@ -1,12 +1,15 @@
 import React from "react";
-import {NavItem} from "./NavItem/NavItem";
+import { NavItem } from "./NavItem/NavItem";
+import StyledNav from "./StyledNav";
 
 export default function Nav() {
   return (
-    <nav>
-      <NavItem link='/asdf'>testChildren</NavItem>
-      <NavItem link='/asdf'>testChildren</NavItem>
-      <NavItem link='/asdf'>testChildren</NavItem>
-    </nav>
+    <StyledNav>
+      <nav>
+        <NavItem className='btn' link="/asdf">testChildren</NavItem>
+        <NavItem className='btn' link="/asdf">testChildren</NavItem>
+        <NavItem className='btn' link="/asdf">testChildren</NavItem>
+      </nav>
+    </StyledNav>
   );
 }

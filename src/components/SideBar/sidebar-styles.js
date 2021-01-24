@@ -110,7 +110,7 @@ justify-content: space-between;
       justify-content: space-evenly;
       margin: 50px 0 0 0;
       /* width: 100%; */
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
     }
 
     .btn{
