@@ -13,7 +13,9 @@ Footer? Position: fixed. Or added to bottom of header?
 [x] remove <code> tags from sidebar and apply styling to buttons
 [] get selected button to keep hover style
 
-
+1.24.2021
+[] mailto: can I have someone send me an email without needing to go to their mail client?
+  [] how can I do this without risking my email address to spammers?
 
 
 

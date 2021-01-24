@@ -9,6 +9,7 @@ const StyledThemeToggle = styled.div`
     display: inline-block;
     width: 50px;
     height: 25px;
+    transform-origin: 20% center;
   }
   .slider {
     background-color: tomato;
@@ -24,22 +25,35 @@ const StyledThemeToggle = styled.div`
     right: 0;
   }
   .slider:before {
-    content: '';
-    width: 20px;
-    height: 20px;
+    content: "";
+    width: 18px;
+    height: 18px;
     background-color: white;
     border-radius: 50px;
-    transition: all 0.4s;
+    transition: 0.3s ease;
     position: absolute;
-    top: 0.5px;
+    top: 1.5px;
     left: 2px;
   }
   input:checked + .slider:before {
     transform: translateX(21px);
+    /* transition-delay: 0.2s; */
     background-color: tomato;
   }
   input:checked + .slider {
+    transform: rotate(90deg);
     background-color: white;
+	&:before {
+		transform: translateX(21px);
+		transition-delay: .2s;
+		transition: 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22) .2s; 
+    background-color: toamto;
+	}
+    
+    /* background-color: white; */
+    /* transform: rotate(90deg); */
+    /* transition-delay: .2s; */
+    /* transition: 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22) .2s; */
   }
 `;
 

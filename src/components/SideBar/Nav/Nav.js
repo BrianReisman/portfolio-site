@@ -6,9 +6,9 @@ export default function Nav() {
   return (
     <StyledNav>
       <nav>
-        <NavItem className='btn' link="/asdf">testChildren</NavItem>
-        <NavItem className='btn' link="/asdf">testChildren</NavItem>
-        <NavItem className='btn' link="/asdf">testChildren</NavItem>
+        <NavItem link="/now">Now</NavItem>
+        <NavItem link="/projects">Projects</NavItem>
+        <NavItem link="/contact">Contact</NavItem>
       </nav>
     </StyledNav>
   );
