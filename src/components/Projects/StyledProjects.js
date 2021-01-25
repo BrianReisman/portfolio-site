@@ -16,7 +16,7 @@ const ProjectStyles = styled.div`
   .top,
   .bottom {
     justify-content: space-around;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
   }
 `;
 export default ProjectStyles;

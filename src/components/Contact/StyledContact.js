@@ -34,15 +34,19 @@ const ContactStyles = styled.div`
   img{
     width: 25px;
     margin: 0 5px 0 5px;
-    position: relative;
-    right: 150px;
+    /* position: relative;
+    right: 150px; */
   }
 .linklogos{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   /* border: 1px solid pink; */
 }
-
+.centerText{
+  text-align:center;
+  margin: 10px 0 10px 0;
+}
 
 `
 

@@ -16,10 +16,26 @@ function Contact() {
     <ContactStyles>
       {/*//* Can this header be put at the top level for rounting? */}
       <Header name={pageName} />
-      <h1>This is code from the contact page</h1>
-      <a href={PDF} target="_blank" rel="noreferrer">
-        see my resume
-      </a>
+      <p className='centerText'>Looking for a <a href={PDF} target="_blank" rel="noreferrer">resume</a>?</p>
+      <div className="linklogos">
+        <p className='centerText'>More digital proof I exist?</p>
+        <a
+          href="https://www.linkedin.com/in/brian-reisman/"
+          class="linkedin"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={LinkedInLogo} alt="Linked In logo" />
+        </a>
+        <a
+          href="https://github.com/BrianReisman"
+          class="github"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={GitHubLogo} alt="Github logo" />
+        </a>
+      </div>
 
       <form>
         <label htmlFor="name">
@@ -38,27 +54,6 @@ function Contact() {
         <button onClick={onBtnClick}>Send it! (You Won't)</button>
       </form>
 
-      <a href="/"> Go home</a>
-
-      <h3>Want to creep a little first?</h3>
-      <div className="linklogos">
-        <a
-          href="https://www.linkedin.com/in/brian-reisman/"
-          class="linkedin"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={LinkedInLogo} alt="Linked In logo" />
-        </a>
-        <a
-          href="https://github.com/BrianReisman"
-          class="github"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={GitHubLogo} alt="Github logo" />
-        </a>
-      </div>
     </ContactStyles>
   );
 }
