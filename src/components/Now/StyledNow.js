@@ -14,10 +14,20 @@ em{
 li{
   list-style-type: lower-roman;
   border-left: 5px solid tomato;
-  margin: 25px 0 25px 0;
+  margin: 25px 0 25px 75px;
   font-size: 1.5rem;
   padding-left: 1%;
 }
+//this is for the Icon component
+img {
+    width: 25px;
+    margin: 0 5px 0 5px;
+    /* position: relative;
+    right: 150px; */
+  }
+  .icons{
+    display: inline-block;
+  }
 `
 
 export default NowStyles;

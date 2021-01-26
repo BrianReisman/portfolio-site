@@ -1,53 +1,56 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ContactStyles = styled.div`
-  *{
-  /* border: 0.5px dotted purple; */
+  * {
+    /* border: 0.5px dotted purple; */
   }
-  form{
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  label, button{
+  label,
+  button {
     display: block;
     margin: 5px 5px 5px 5px;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
-  button{
+  button {
     background-color: tomato;
     border-radius: 0 20px 20px 0;
     outline: none;
   }
-  input{
-    width: 300px;
+  input {
+    width: 400px;
+    font-size: 1.6rem;
   }
-  textarea{
-    height: 100px;
-    width: 500px;
+  textarea {
+    height: 200px;
+    width: 650px;
+    font-size: 2rem;
   }
-  h3{
+  h3 {
     position: relative;
     right: 150px;
     text-align: right;
   }
-  img{
+  img {
     width: 25px;
     margin: 0 5px 0 5px;
     /* position: relative;
     right: 150px; */
   }
-.linklogos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid pink; */
-}
-.centerText{
-  text-align:center;
-  margin: 10px 0 10px 0;
-}
-
-`
+  .linklogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid pink; */
+  }
+  .centerText {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 1.4rem;
+  }
+`;
 
 export default ContactStyles;

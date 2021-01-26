@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledThemeToggle = styled.div`
   .toggle input {
-    /* display: none; */
+    display: none;
     height: 40px;
     width: 40px;
   }
@@ -25,14 +25,9 @@ const StyledThemeToggle = styled.div`
     left: 0;
     right: 0;
     position: absolute;
-
     transform-origin: 25% center;
 
-
-    /* transition: all 0.4s;
-    margin: 40px;
-    width: 70px; */
-
+    transition: all .1s;
   }
   .slider:before {
     content: "";
@@ -40,29 +35,24 @@ const StyledThemeToggle = styled.div`
     height: 18px;
     background-color: white;
     border-radius: 50px;
-    /* transition: 0.3s ease; */
+    transition: 0.2s ease;
     position: absolute;
     top: 1.5px;
     left: 2px;
   }
   input:checked + .slider:before {
     transform: translateX(21px);
-    /* transition-delay: 0.2s; */
+    transition-delay: none;
     background-color: tomato;
   }
   input:checked + .slider {
     transform: rotate(90deg);
     background-color: white;
     &:before {
+      /* background-color: tomato; */
       transform: translateX(21px);
-      transition: 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22) .2s; 
-      background-color: tomato;
-	}
-    
-    /* background-color: white; */
-    /* transform: rotate(90deg); */
-    /* transition-delay: .2s; */
-    /* transition: 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22) .2s; */
+      /* transition: 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s; */
+    }
   }
 `;
 

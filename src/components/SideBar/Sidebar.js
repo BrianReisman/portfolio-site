@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import SidebarStyles from "./sidebar-styles";
+import SidebarStyles from "./StyledSidebar";
 
 // components
 import ThemeToggle from "./ThemeToggle/ThemeToggle";

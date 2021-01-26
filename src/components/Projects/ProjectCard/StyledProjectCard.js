@@ -3,15 +3,19 @@ import styled from "styled-components";
 const StyledProjectCard = styled.div`
   background-color: antiquewhite;
   border: 1px solid gold;
-  max-width: 50%;
+  width: 50%;
   max-height: 50%;
   word-wrap: break-word;
-  h1 {
+  padding: 5px;
+  margin: 5px;
+
+  a, h1 {
     font-size: 3.2rem;
-    /* transition-duration: 1s; */
+    color: black;
+    text-decoration: none;
   }
   :hover {
-    h1 {
+    a, h1 {
       transition-duration: 0.2s;
       color: tomato;
       cursor: pointer;
