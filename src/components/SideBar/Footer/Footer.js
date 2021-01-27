@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Footer = () => {
   return (
     <footer>
-    <code>
-      Built by Brian, 2020, using React. Brought to you in part by
-      electricity.
-    </code>
-    {/* LI + GH icons? */}
-  </footer>
-)
-}
+      {/* <ThemeToggle /> */}
+      <code>
+        Built by Brian, 2020, using React. Brought to you in part by
+        electricity.
+      </code>
+    </footer>
+  );
+};
 
 export default Footer;

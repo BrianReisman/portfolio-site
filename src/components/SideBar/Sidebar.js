@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   return (
     <SidebarStyles>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Header />
       <Nav />
       <Footer />

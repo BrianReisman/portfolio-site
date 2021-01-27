@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const StyledThemeToggle = styled.div`
+  display: flex;
+  justify-content: flex-end;
   .toggle input {
     display: none;
     height: 40px;

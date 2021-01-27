@@ -21,7 +21,7 @@ const Header = () => {
       <p>
         and I <s>break</s> make things for the web<span id="point">!</span>
       </p>
-      <p id="aside">...there's a hidden link near by...</p>
+      {/* <p id="aside">...there's a hidden link near by...</p> */}
     </div>
   );
 };

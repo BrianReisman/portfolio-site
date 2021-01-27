@@ -7,6 +7,8 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Now from "./components/Now/Now";
 import Contact from "./components/Contact/Contact";
+import ProjectPage from './components/ProjectPage/ProjectPage';
+
 
 import styled from "styled-components";
 import { Route, Switch } from "react-router-dom";
@@ -33,7 +35,8 @@ function App() {
       <Sidebar />
       <div className="right-pane">
         <Switch>
-          <Route path="/projects" component={Projects} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/projects/:id" component={ProjectPage} />
           <Route path="/now" component={Now} />
           <Route path="/contact" component={Contact} />
           <Route exact path="/" component={Home} />

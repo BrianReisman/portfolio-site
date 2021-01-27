@@ -7,58 +7,76 @@ function Now() {
   const pageName = "Now";
   return (
     <NowStyles>
-      <Header name={pageName}>Now</Header>
-      <button>short version</button>
-      <button>less short</button>
-      <p className="icons">
-        Interested in my past/what I've done?
-        <div className="icons">
-          <Icons />
-        </div>
-      </p>
-      <p>
-        Interested in what I'm doing <em>now</em>.
-      </p>
-      <p>
-        If you'd like to know what I'm doing, <em>now</em> then you're in the
-        right spot!
-      </p>
+      <Header name={pageName} />
+      {/* <button>short version</button>
+      <button>less short</button> */}
+
+      <div className="containerNowTop">
+        <p className="icons">
+          Interested in what I've done? 👉
+          <div className="icons">
+            <Icons />
+          </div>
+          . Here's what I'm <em>doing</em>. 👇
+        </p>
+      </div>
+
       <ul>
         <li>
-          📘 Reading cover to cover JavaScript: The Definitive Guide (currently
-          on page 272, and just learned that ES6 introduced dynamic importing)
+          Finishing up my studies at a 6 month web dev and computer science
+          program
         </li>
-        <li>30 hours into a 40 hours course reinforcin React</li>
-        <li>Spending too much money adding to my 🍵 tea library.</li>
-        <li>Reading Seth Godin's The Practice</li>
         <li>
-          Day dreaming about when I can travel next, and fantasizing what a week
-          (...or two 😀😍) would look like <a href="#">here</a> and{" "}
-          <a href="#">here</a>.
+          📘 Reading JavaScript: The Definitive Guide (currently on page 272,
+          and just learned that in ES6 there is dynamic importing...?!)
         </li>
-        <p>
+        {/* <li>Spending too much money adding to my 🍵tea tea library.</li> */}
+        <li>30 hours into a 40 hours course reinforcing React</li>
+        <li>
+          Working on an awesome 9 person team building a job board for Jr.
+          JavaScript developers
+        </li>
+        {/* <p>
           Thanks Derek Sivers for the idea to have this page... and start
           programming... and live life on my terms.
-        </p>
+        </p> */}
       </ul>
-      <hr />
-      <blockquote>
-        This is a quote I like it makes me think about life.
-      </blockquote>
-      <hr />
       <ul>
-        <li>Code is great. Here are some other things I love:</li>
-        <li>Theater</li>
-        <li>Needle Point</li>
-        <li>Muji Pens</li>
-        <hr />
-        <blockquote>
-          How do you writea a complex program? As simply as possible
-        </blockquote>
-        <hr />
-      </ul>
 
-      <h2>less short</h2>
+
+
+        <p>Code is great but here are some other things I love:</p>
+        <li>Theater</li>
+        <li>Days off while traveling</li>
+        <li>Muji Pens</li>
+        <li>
+          Day dreaming about when I can travel next, and fantasizing what a week
+          (...or two 😀😍) would look like{" "}
+          <a
+            href="https://www.booking.com/hotel/ge/kazbegi-view.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.alpacaexpeditions.com/inca-trail-expedition-5d4n/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>
+          .
+        </li>
+        {/* <li>Reading Seth Godin's The Practice</li> */}
+      </ul>
+      
+      {/* <blockquote>
+        How do you writea a complex program? As simply as possible
+      </blockquote> */}
+
+      {/* <h2>less short</h2>
       <p>6 word answers</p>
       <p>When did you start coding? 2019: kicked tires. 2020: got serious</p>
       <p>
@@ -67,7 +85,7 @@ function Now() {
       <p>
         What are you reading now? JavaScript: The Definitive Guide +{" "}
         <a>The Practice</a>
-      </p>
+      </p> */}
     </NowStyles>
   );
 }

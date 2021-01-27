@@ -14,13 +14,12 @@ const StyledNav = styled.div`
   nav a {
     //can target NavLink with a tag
     text-decoration: none;
-    border: 1px solid blue;
     font-size: 2.2rem;
   }
   * {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 `;
 
 export default StyledNav;

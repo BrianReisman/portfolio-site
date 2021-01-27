@@ -6,7 +6,7 @@ width: 40%;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 *{
 /* border: 1px solid red; */
 }
@@ -76,8 +76,8 @@ justify-content: space-between;
     width: 100%;
     margin: 0 0 0 10%;
   }
-    header p {
-      font-size: 1.6rem;
+    .container p {
+      font-size: 1.8rem;
     }
     s {
       font-size: 1.4rem;
@@ -115,7 +115,7 @@ justify-content: space-between;
 
     .btn{
       font-family: monospace;
-      border: 1px botted red;
+      /* border: 1px botted red; */
       padding: 8px 25px 8px 25px;
       outline: none; /*keeps after click outline away*/
       border-radius: 20px 0 20px 0;
@@ -131,7 +131,7 @@ justify-content: space-between;
       }
 
     .btnActive{
-      border: 1px botted red;
+      /* border: 1px botted red; */
       margin-right: 5%;
       padding: 8px 25px 8px 25px;
       outline: none; /*keeps after click outline away*/
@@ -169,16 +169,25 @@ justify-content: space-between;
   }
 
     footer{
+      position: fixed;
+      bottom: 0;
+      padding-bottom: 7px;
       height: 3vh;
       display: flex;
       align-items: flex-end;
-      justify-content: center;
+      justify-content: flex-start;
+      word-wrap: wrap;
+      width: 30%;
+      border: 1px solid blue;
     }
     footer code{
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-family: monospace;
     }
-
+    footer input{
+      position: fixed;
+      left: 0;
+    }
   
 `;
 
